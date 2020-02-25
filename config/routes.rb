@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'welcome/index'
+  # This line tells Rails to map requests to the root of the app to the welcome controllers index action
+  root 'welcome#index'
 end
